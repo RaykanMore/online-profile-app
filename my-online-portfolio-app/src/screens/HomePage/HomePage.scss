@@ -1,0 +1,86 @@
+
+@import "./components/SectionBodyPanel/SectionBodyPanel.scss";
+
+.hp-outer-container {
+    border: 1px solid black;
+    *t {
+        border: 1px solid black;
+    }
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+
+    .hp-primary-panel {
+        width: 50%;
+        height: 100%;
+    }
+    .hp-left-panel {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .hp-vertical-section-break {
+            border-left: 1px solid $primary-blue;
+            opacity: .3;
+            height: 50%;
+        }
+    }
+    .hp-right-panel {
+        display: flex;
+        flex-direction: column;
+        .right-panel-primary-panel {
+            width: 100%;
+            height: 50%;
+            display: flex;
+        }
+        .right-panel-top {
+            padding-bottom: 10%;
+            display: flex;
+            align-items: flex-end;
+        }
+        .right-panel-bottom {
+            padding-top: 10%;
+            
+        }
+    }
+}
+.section-bubble {
+    //border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.psb-outer-container {
+    margin-right: 10%;
+    height: 350px;
+    width: 350px;
+
+    .section-image {
+        height: 100%;
+        width: 100%;
+    }
+}
+.ssb-outer-container {
+    margin-left: 10%;
+    height: 150px;
+    width: 150px;
+    background-color: $tirtiary-blue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 100ms ease;
+    .section-icon {
+        color: $primary-blue;
+        font-size: 50px;
+        transition: color 1000ms ease;
+    }
+
+    &:hover {
+        background-color: $secondary-green;
+        .section-icon {
+            color: $primary-green;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+$border-radius: 40px;
+
+.sbp-outer-container {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;;
+    box-shadow: -1px -1px 15px $secondary-green;
+    background-color: white;
+    transition: left 500ms ease-out;
+
+    .sbp-close-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        .sbp-close {
+            margin: 20px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: $tirtiary-blue;
+            .close-icon {
+                color: $primary-blue;
+                font-size: 20px;
+            }
+        }
+    }
+}
