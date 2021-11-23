@@ -1,6 +1,18 @@
+@import './colors/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@200&family=Poppins:ital,wght@0,600;1,100&display=swap');
+
+
 .button {
     cursor: pointer;
 }
 
-@import './colors/colors.scss';
+.button-hover {
+    &:hover {
+        background-color: $secondary-green;
+        * {
+            color: $primary-green;
+        }
+    }
+}
+
 @import "../../screens/HomePage/HomePage.scss";

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const SecondarySectionBubble = (props) => {
     return (
         <div
-            className="button section-bubble ssb-outer-container"
+            className="button button-hover section-bubble ssb-outer-container"
             onClick={() => props.showSectionBody()}
         >
             <FontAwesomeIcon

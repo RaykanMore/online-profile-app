@@ -2,31 +2,238 @@ $border-radius: 40px;
 
 .sbp-outer-container {
     position: absolute;
-    height: 100%;
-    width: 50%;
-    border-top-right-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;;
-    box-shadow: -1px -1px 15px $secondary-green;
-    background-color: white;
     transition: left 500ms ease-out;
+    height: 100%;
+    width: 100%;
+    //filter: blur(10px);
+    z-index: 10px;
+    background-color: $tirtiary-blue;
 
-    .sbp-close-container {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
+    .sbp-panel {
+        height: 100%;
+        width: 50%;
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;;
+        box-shadow: -1px -1px 15px $secondary-green;
+        background-color: white;
 
-        .sbp-close {
-            margin: 20px;
-            width: 40px;
-            height: 40px;
+
+        .sbp-close-container {
+            width: 100%;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background-color: $tirtiary-blue;
-            .close-icon {
-                color: $primary-blue;
-                font-size: 20px;
+            justify-content: flex-end;
+    
+            .sbp-close {
+                margin: 20px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background-color: $tirtiary-blue;
+                .close-icon {
+                    color: $primary-blue;
+                    font-size: 25px;
+                }
+            }
+        }
+        .sbp-body-container {
+            height: 100%;
+            //border: 1px solid black;
+            .sbp-title-container {
+                margin-bottom: 3%;
+                font-family: 'Poppins', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .sbp-icon {
+                    margin-right: 2%;
+                    font-size: 25px;
+                    color: $secondary-green;
+                }
+                .sbp-image {
+                    width: 50px;
+                    margin-right: 2%;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+                .sbp-title {
+                    font-weight: 600;
+                    font-size: 26px;
+                    letter-spacing: 1px;
+                    word-spacing: 3px;
+                    color: $black;
+                }
+            }
+            .sbp-body {
+                //border: 1px solid black;
+                height: 80%;
+                width: 100%;
+                padding: 15px;
+                box-sizing: border-box;
+                display: flex;
+                overflow: scroll;
+                justify-content: center;
+                a {
+                    text-decoration: none;
+                    
+                }
+            }
+        }
+    }
+}
+
+.body-container {
+    //border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.mdb-outer-container {
+    align-items: center;
+    justify-content: center;
+}
+.amb-outer-container {
+    //border: 1px solid black;
+    display: flex;
+
+    p {
+        //border: 1px solid black;
+        margin-bottom: 20px;
+        text-align: left;
+        font-family: 'M PLUS 2', sans-serif;
+        font-size: 18px;
+        word-spacing: 3px;
+    }
+}
+.meb-outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mvb-outer-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dlt-outer-container {
+    border: 1px solid $secondary-green;
+    width: 400px;
+    margin-bottom: 15%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-family: 'M PLUS 2', sans-serif;
+    font-weight: 1;
+    border-radius: 5px;
+    color: $primary-green;
+    //background-color: $tirtiary-blue;
+    transition: background-color 1000ms ease, border 1000ms ease, transform 500ms ease;
+
+    .tile-icon {
+        margin-right: 3%;
+        font-size: 20px;
+    }
+    .tile-title {
+        font-size: 18px;
+    }
+
+    &:hover {
+        border: transparent;
+        background-color: $primary-blue;
+        transform: scale(1.1);
+        * {
+            color: white;
+        }
+    }
+}
+
+.edt-outer-container {
+    border: 1px solid $secondary-green;
+    width: 80%;
+    margin-bottom: 10%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+
+    .edt-primary-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        color: $grey;
+    }
+    .edt-secondary-text {
+        font-family: 'M PLUS 2', sans-serif;
+        font-size: 17px;
+        color: $primary-green;
+    }
+}
+
+.vt-outer-container {
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .vt-title {
+        margin-top: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 19px;
+        letter-spacing: 2px;
+        color: $grey;
+    }
+}
+.ert-outer-container {
+
+    .work-record-table {
+        margin-bottom: 5%;
+        border-bottom: 1px solid $secondary-green;
+
+        .table-heading-primary, .table-heading-secondary, .table-heading-tirtiary {
+            font-family: 'Poppins', sans-serif;
+        }
+        .table-heading-primary {
+            font-size: 18px;
+            background-color: $primary-green;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            overflow: hidden;
+        }
+        .table-heading-secondary {
+            //margin-bottom: 5px;
+            font-size: 15px;
+            background-color: $secondary-green;
+        }
+        .table-row-secondary {
+            padding-bottom: 5px;
+            //background-color: yellow;
+        }
+        .table-heading-tirtiary {
+            font-size: 14px;
+            width: 17.5%;
+            text-align: left;
+            vertical-align: top;
+            color: $grey;
+        }
+        .table-data {
+            text-align: left;
+            font-family: 'M PLUS 2', sans-serif;
+            font-size: 14px;
+        }
+
+        tr {
+            &:last-child {
+                border: 1px solid $primary-green;
             }
         }
     }
