@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SecondarySectionBubble = (props) => {
     return (
-        <div
-            className="ssb-outer-container"
-            onClick={() => props.showSectionBody()}
-        >
-            <div className="button button-hover section-bubble ssb-icon-container">
+        <div className="ssb-outer-container">
+            <div
+                className="button button-hover section-bubble ssb-icon-container"
+                onClick={() => props.showSectionBody()}
+            >
                 <FontAwesomeIcon
                     className='section-icon'
                     icon={props.icon}

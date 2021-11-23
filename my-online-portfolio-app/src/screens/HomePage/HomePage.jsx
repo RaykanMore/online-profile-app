@@ -6,10 +6,12 @@ import {
     faBriefcase as workSectionIcon,
     faUniversity as educationSectionIcon,
     faHandHoldingHeart as valuesSectionIcon,
-    faCopy as documentsSectionIcon
+    faCopy as documentsSectionIcon,
+    faPencilRuler as projectsSectionIcon,
 } from '@fortawesome/free-solid-svg-icons';
 import SectionBodyPanel from './components/SectionBodyPanel/SectionBodyPanel';
 import SocialMediaLinks from './components/SectionBodyPanel/components/SocialMediaLinks';
+import ContactCard from './components/SectionBodyPanel/components/ContactCard';
 
 
 const HomePage = () => {
@@ -42,7 +44,8 @@ const HomePage = () => {
                 <SocialMediaLinks runAnimation={runAnimation} />
                 <PrimarySectionBubble
                     source={image}
-                    title='Reabetswe Raikane More'
+                    name='Reabetswe Raikane More'
+                    title='About Me'
                     showSectionBody={() => sectionBodyPanelHndlr('ABOUT_SECTION', image)}
                     runAnimation={runAnimation}
                 />
@@ -74,6 +77,12 @@ const HomePage = () => {
                         showSectionBody={() => sectionBodyPanelHndlr('EDUCATION_SECTION', educationSectionIcon)}
                         runAnimation={runAnimation}
                     />
+                    <SecondarySectionBubble
+                        icon={projectsSectionIcon}
+                        title="Projects"
+                        showSectionBody={() => sectionBodyPanelHndlr('PROJECTS_SECTION', projectsSectionIcon)}
+                        runAnimation={runAnimation}
+                    />
                 </div>
                 <div className=" right-panel-primary-panel right-panel-bottom">
                     <SecondarySectionBubble
@@ -96,6 +105,7 @@ const HomePage = () => {
                 selectedSectionIcon={selectedSectionIcon}
                 closeSidePanel={closeSectionBodyPanel}
             />
+            <ContactCard />
         </div>
     );
 }

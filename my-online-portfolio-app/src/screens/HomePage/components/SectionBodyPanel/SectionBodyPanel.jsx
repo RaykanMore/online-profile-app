@@ -6,6 +6,7 @@ import AboutMeBody from './components/AboutMeBody';
 import MyEducationBody from './components/MyEducationBody';
 import MyValuesBody from './components/MyValuesBody';
 import EmploymentHistoryBody from './components/EmploymentHistoryBody';
+import MyProjectsBody from './components/MyProjectsBody';
 
 const SectionBodyPanel = props => {
     const getSectionTitle = () => {
@@ -20,6 +21,8 @@ const SectionBodyPanel = props => {
                 return 'My Values';
             case 'DOCUMENTS_SECTION':
                 return 'My Supporting Documents';
+            case 'PROJECTS_SECTION' :
+                return 'My Projects';
             default:
                 return '';
         }
@@ -82,6 +85,10 @@ const SectionBodyPanel = props => {
                         {
                             props.selectedSection === 'WORK_SECTION' &&
                             <EmploymentHistoryBody />
+                        }
+                        {
+                            props.selectedSection === 'PROJECTS_SECTION' &&
+                            <MyProjectsBody />
                         }
                     </div>
                 </div>

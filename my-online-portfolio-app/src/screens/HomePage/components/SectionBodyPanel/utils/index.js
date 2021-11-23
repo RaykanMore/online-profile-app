@@ -1,6 +1,12 @@
 
 
 import Degree from '../../../../../assets/documents/bsc-degree-cert.pdf';
+import Resumé from '../../../../../assets/documents/resumé.pdf';
+import DataScienceCert from '../../../../../assets/documents/introduction-to-data-sciences.pdf';
+import ReapCert from '../../../../../assets/documents/reap-certificate.pdf';
+import cocktailsGigImage from '../../../../../assets/images/cocktails-gig.jpeg';
+import highSchoolImage from '../../../../../assets/images/my-high-school.jpeg';
+
 import {
     faCertificate,
     faAward,
@@ -23,7 +29,7 @@ import {
 export const MY_DOCUMENTS = [
     {
         documentTitle: 'Resumé',
-        documentLink: Degree,
+        documentLink: Resumé,
         documentIcon: faFile
     },
     {
@@ -33,12 +39,12 @@ export const MY_DOCUMENTS = [
     },
     {
         documentTitle: 'Data Science Certificate',
-        documentLink: Degree,
+        documentLink: DataScienceCert,
         documentIcon: faCertificate
     },
     {
         documentTitle: 'REAP Scholarship Award',
-        documentLink: Degree,
+        documentLink: ReapCert,
         documentIcon: faAward
     },
 ];
@@ -184,17 +190,43 @@ export const MY_WORK_EXPERIENCE = [
 
 export const MY_SOCIALS = [
     {
-        href: 'https://instagram.com/raykan_ion',
-        icon: instagramIcon
+        href: 'https://www.linkedin.com/in/reabetswe-raikane-more-5778131b4',
+        icon: linkedInIcon
     },
     {
         href: 'https://github.com/RaykanMore',
         icon: gitHubIcon
     },
     {
-        href: 'https://www.linkedin.com/in/reabetswe-raikane-more-5778131b4',
-        icon: linkedInIcon
+        href: 'https://instagram.com/raykan_ion',
+        icon: instagramIcon
     },
 
+];
+
+export const MY_PROJECTS = [
+    {
+        title: 'Cocktails Project',
+        image: cocktailsGigImage,
+        alt: 'An event where my cocktail business was launched to the public and had paying sutsomers.',
+        synopsis: `Being true to my nature of always exploring and trying out new ideas for fun and solving problems in everyday life, 
+        I recently launched a business. This is a business that has as its customers people who host events and need cocktails to be served to 
+        their guests and attendees. My curiosity into the art of mixing drinks to create new flavours was my primary inspiration behind creating 
+        this business. I was also pushed by my personal financial shortfalls which inspired me to take charge of my own life and explore 
+        entrepreneurship.  To date, I have had one revenue generating event and it was an absolute joy.`,
+        imageCrop: 'vertical',
+        orientation: 'leftRight'
+    },
+    {
+        title: 'The Tutoring Project',
+        image: highSchoolImage,
+        alt: 'Lerothodi Secondary School -- this is the school I attended.',
+        synopsis: `I started the tutoring project in 2017 after completing my matric and noticing that there was a gap between tertiary institutions 
+        and universities. I worked primarily with the school I matriculated from and I had the platform to share my experiences and tips on how to pass 
+        matric and enter into the university space. I have been running this project for 4 years and some of the major wins I have achieved are helping 
+        learners apply for universities and secure financial aid for their university studies. `,
+        imageCrop: 'horizontal',
+        orientation: 'rightLeft',
+    },
 ]
     
