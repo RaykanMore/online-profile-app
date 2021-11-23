@@ -105,7 +105,7 @@ const HomePage = () => {
                 selectedSectionIcon={selectedSectionIcon}
                 closeSidePanel={closeSectionBodyPanel}
             />
-            <ContactCard />
+            <ContactCard runAnimation={runAnimation} />
         </div>
     );
 }

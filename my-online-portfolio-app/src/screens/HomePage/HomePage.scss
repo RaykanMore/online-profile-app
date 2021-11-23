@@ -129,7 +129,7 @@
     right: 30px;
     display: flex;
     flex-direction: column;
-    z-index: 1px !important;
+    transition: transform 900ms ease-in, opacity 900ms ease-in;
     .location {
         //margin-bottom: 3px;
         font-family: 'Poppins', sans-serif;
