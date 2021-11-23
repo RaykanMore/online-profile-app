@@ -14,6 +14,12 @@ import {
     faSearch as LearningIcon
 } from '@fortawesome/free-solid-svg-icons';
 
+import {
+    faInstagram as instagramIcon,
+    faLinkedinIn as linkedInIcon,
+    faGithub as gitHubIcon,
+} from '@fortawesome/free-brands-svg-icons';
+
 export const MY_DOCUMENTS = [
     {
         documentTitle: 'Resumé',
@@ -60,6 +66,7 @@ export const ABOUT_ME = [
     important in an individual’s ability to excel in a working environment and in being effective . My long term goal is to have a global impact in the 
     technology space and to contribute in making South Africa move to a more advanced digital country. The mentorship program, I believe, will provide a 
     foundation to achieving these goals.`,
+    'Thank you for taking the time to read the aforementioned. To find out more on who I am and what I stand for, click the icons on the right and explore.'
 ];
 
 export const MY_EDUCATION = [
@@ -173,5 +180,21 @@ export const MY_WORK_EXPERIENCE = [
             }
         ]
     },
+];
+
+export const MY_SOCIALS = [
+    {
+        href: 'https://instagram.com/raykan_ion',
+        icon: instagramIcon
+    },
+    {
+        href: 'https://github.com/RaykanMore',
+        icon: gitHubIcon
+    },
+    {
+        href: 'https://www.linkedin.com/in/reabetswe-raikane-more-5778131b4',
+        icon: linkedInIcon
+    },
+
 ]
     

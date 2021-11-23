@@ -5,7 +5,7 @@ const ValuesTile = props => {
     return (
         <div className="vt-outer-container">
             <div
-                className="section-bubble ssb-outer-container"
+                className="section-bubble ssb-icon-container"
                 style={{
                     marginLeft: "0px",
                     border: "1px solid #508d5263",

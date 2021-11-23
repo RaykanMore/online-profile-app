@@ -1,7 +1,6 @@
 import React from 'react';
 
 const EmploymentRecordTile = props => {
-    console.log('PROPS:', props);
     return (
         <div className="ert-outer-container">
             <table className="work-record-table">

@@ -2,10 +2,7 @@
 @import "./components/SectionBodyPanel/SectionBodyPanel.scss";
 
 .hp-outer-container {
-    border: 1px solid black;
-    *t {
-        border: 1px solid black;
-    }
+    //border: 1px solid black;
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -17,19 +14,22 @@
         height: 100%;
     }
     .hp-left-panel {
+        //border: 1px solid black;
+        margin-right: 10%;
+        margin-left: 5%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
 
         .hp-vertical-section-break {
             border-left: 1px solid $primary-blue;
-            opacity: .3;
-            height: 50%;
+            transition: opacity 1000ms ease-in, height 900ms ease-in;
         }
     }
     .hp-right-panel {
         display: flex;
         flex-direction: column;
+        transition: transform 900ms ease-in, opacity 900ms ease-in;
         .right-panel-primary-panel {
             width: 100%;
             height: 50%;
@@ -47,22 +47,39 @@
     }
 }
 .section-bubble {
-    //border: 1px solid black;
     border-radius: 50%;
     overflow: hidden;
+    transition: transform 900ms ease-in, opacity 900ms ease-in;
 }
 .psb-outer-container {
-    margin-right: 10%;
     height: 350px;
     width: 350px;
 
     .section-image {
         height: 100%;
         width: 100%;
+        transition: transform 700ms ease-in;
+
+        &:hover {
+            transform: scale(1.3);
+
+        }
     }
 }
 .ssb-outer-container {
-    margin-left: 10%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ssb-title {
+        margin-top: 10%;
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-family: 'M PLUS 2', sans-serif;
+        color: $primary-green;
+    }
+}
+.ssb-icon-container {
     height: 150px;
     width: 150px;
     background-color: $tirtiary-blue;
@@ -71,9 +88,31 @@
     align-items: center;
     justify-content: center;
     transition: background-color 100ms ease;
+
     .section-icon {
         color: $primary-blue;
         font-size: 50px;
         transition: color 1000ms ease;
+    }
+}
+
+.sml-outer-container {
+    //border: 1px solid black;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: opacity 1500ms ease-in;
+    a {
+        text-decoration: none;
+        margin-bottom: 5%;
+    }
+    .social-media-icon {
+        font-size: 35px;
+        color: $secondary-green;
+        transition: color 900ms ease;
+        &:hover {
+            color: $primary-blue;
+        }
     }
 }

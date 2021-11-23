@@ -2,11 +2,14 @@ import React from 'react';
 
 
 const PrimarySectionBubble = props => {
-    console.log(props.source)
     return (
         <div
             className="button section-bubble psb-outer-container"
             onClick={() => props.showSectionBody()}
+            style={{
+                transform: `translateX(${props.runAnimation ?  "0%" : "-50%"})`,
+                opacity: props.runAnimation ?  "1" : ".3"
+            }}
         >
             <img
                 className='section-image'

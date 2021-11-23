@@ -1,7 +1,6 @@
 import React from 'react';
 
 const EducationDetailsTile = props => {
-    console.log('PROPS:', props)
     return (
         <div className="edt-outer-container">
             <text className="edt-primary-text">{props.qualification}</text>
