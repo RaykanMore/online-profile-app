@@ -82,12 +82,7 @@ export const MY_EDUCATION = [
         location: 'South Africa | Johannesburg',
         distinctions: []
     },
-    {
-        qualification: 'BACHELOR OF ENGINEERING | INDUSTRIAL ENGINEERING',
-        institutionAndDuration: 'University of the Witwatersrand | 2021 - current',
-        location: 'South Africa | Johannesburg',
-        distinctions: []
-    },
+
     {
         qualification: 'DATA SCIENCE & MACHINE LEARNING WITH R FROM A-Z MASTERCLASS',
         institutionAndDuration: 'Udemy | 2021 - current',
