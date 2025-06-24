@@ -13,7 +13,7 @@ const ContactCard = props => {
                 <text className="information">raykan.more@gmail.com</text>
             </div>
             <div className="cc-contact-entry">
-                <text className="information">(+27) 76 906 0204</text>
+                <text className="information">(+27) 64 757 2232</text>
             </div>
         </div>
     );
